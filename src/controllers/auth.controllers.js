@@ -1,4 +1,4 @@
-import {user as User} from "../model/user.model.js"
+import {User} from "../model/user.model.js"
 import { ApiResponse } from "../utils/api-response.js";
 import { asyncHandler } from "../utils/async-handler.js";
 import { ApiError } from "../utils/api-error.js";
