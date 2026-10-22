@@ -18,7 +18,7 @@ const TaskSchema = new Schema({
         type : Schema.Types.ObjectId,
         ref : "User",
     },
-    assignedTo :{
+    assignedBy :{
         type : Schema.Types.ObjectId,
         ref : "User",
     },
