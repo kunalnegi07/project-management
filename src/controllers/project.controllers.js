@@ -212,7 +212,7 @@ const getProjectMembers = asyncHandler(async(req,res)=>{
 const updateMemberRole = asyncHandler(async(req,res)=>{
     const {newRole} = req.body
     const {projectId,userId} = req.params
-    if(!AvailableUserRoles.includes){
+    if(!AvailableUserRoles.includes(newRole)){
         throw new ApiError(400,"invalid role")
     }
     
